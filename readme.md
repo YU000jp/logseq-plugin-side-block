@@ -4,8 +4,6 @@
 
 > Normally, it can be applied as custom CSS, but we have made it a plugin to make it easier to use.
 
-- Development stage (not published yet) 👷🚧
-
 > [Release](https://github.com/YU000jp/logseq-plugin-side-block/releases) information is on the right. Load files at developer mode.
 
 [![latest release version](https://img.shields.io/github/v/release/YU000jp/logseq-plugin-side-block)](https://github.com/YU000jp/logseq-plugin-side-block/releases)
