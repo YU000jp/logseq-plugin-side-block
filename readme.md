@@ -52,6 +52,10 @@
 - From the second time onwards, Type a space and `/.`, suggestions will be displayed.
 Tags containing `.side` are displayed only when editing.
 
+### Showcase
+
+- Use it by embedding it in a template.
+
 ---
 
 ## Showcase / Questions / Ideas / Help
