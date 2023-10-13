@@ -1,0 +1,45 @@
+div#root>div>main>div#app-container {
+
+    & div.block-content :is(h1, h2, h3, h4, h5, h6) {
+        padding: .1em
+    }
+
+    & div.ls-block {
+        &[data-refs-self*=".side"] {
+            display: flex;
+
+            &>div.block-children-container {
+                flex-grow: 1;
+            }
+
+            &>div>div>div>div>div>div>div>div>a.tag {
+                float: left;
+            }
+
+            &+div.ls-block[data-refs-self*=".side"] {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+        }
+
+        &[data-refs-self*=".side-s"]>div>div>div>div>div.block-content {
+            width: 100px !important;
+        }
+
+        &[data-refs-self*=".side-m"]>div>div>div>div>div.block-content {
+            width: 200px !important;
+        }
+
+        &[data-refs-self*=".side-l"]>div>div>div>div>div.block-content {
+            width: 300px !important;
+        }
+
+        &[data-refs-self*=".side-ll"]>div>div>div>div>div.block-content {
+            width: 400px !important;
+        }
+
+        &[data-refs-self*=".side-lll"]>div>div>div>div>div.block-content {
+            width: 500px !important;
+        }
+    }
+}

@@ -1,5 +1,5 @@
 
-var PLUGIN_NAME = 'logseq-plugin-template-typescript'
+var PLUGIN_NAME = 'logseq-plugin-side-block';
 
 module.exports = {
     branches: ['main'],
@@ -21,4 +21,4 @@ module.exports = {
             failTitle: false,
         }],
     ],
-}
+};
