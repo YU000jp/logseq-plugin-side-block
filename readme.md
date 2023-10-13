@@ -1,6 +1,6 @@
 # Logseq Plugin: Side Block
 
-- Place the child block next to the parent block.
+- Place child blocks next to the parent block.
 
 > Normally, it can be applied as custom CSS, but we have made it a plugin to make it easier to use.
 
