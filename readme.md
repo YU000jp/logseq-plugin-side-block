@@ -1,10 +1,12 @@
 # Logseq Plugin: Side Block
 
+- Place child blocks next to the parent block.
+
+> Normally, it can be applied as custom CSS, but we have made it a plugin to make it easier to use.
+
 - Development stage (not published yet) 👷🚧
 
 > [Release](https://github.com/YU000jp/logseq-plugin-side-block/releases) information is on the right. Load files at developer mode.
-
-> This plugin still has room for improvement. Please let me know if you encounter any issues or have any ideas for enhancement.
 
 [![latest release version](https://img.shields.io/github/v/release/YU000jp/logseq-plugin-side-block)](https://github.com/YU000jp/logseq-plugin-side-block/releases)
 [![License](https://img.shields.io/github/license/YU000jp/logseq-plugin-side-block?color=blue)](https://github.com/YU000jp/logseq-plugin-side-block/LICENSE)
@@ -13,11 +15,24 @@
 
 ---
 
-## Options
+## Feature
+
+- If attach a specific tag to a parent block, child blocks will be placed next to it.
+> The tags are hidden except when editing.
+
+![スクリーンショット 2023-10-13 144110](https://github.com/YU000jp/logseq-plugin-side-block/assets/111847207/c85ebc5e-9442-42c0-bac5-1616203483ca)
 
 ---
 
 ## Getting Started
+
+### Not supported
+
+- `Bullet Threading` plugin cannot be used at the same time
+
+### Install as custom CSS
+
+- [CSS code here](https://github.com/YU000jp/logseq-plugin-side-block/blob/main/src/style.css)
 
 ### Install from Logseq Marketplace (Coming👷🚧)
 
@@ -26,6 +41,16 @@
 - Type `Side` in the search field, select it from the search results and install
 
 ### Usage
+
+- Add a specific tag to the parent block.
+  - `#.side`: width unset
+  - `#.side-s`: width 100px
+  - `#.side-m`: width 200px
+  - `#.side-l`: width 300px
+  - `#.side-ll`: width 400px
+  - `#.side-lll`: width 500px
+- From the second time onwards, Type a space and `/.`, suggestions will be displayed.
+Tags containing `.side` are displayed only when editing.
 
 ---
 
