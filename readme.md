@@ -19,6 +19,11 @@
 
 ## Getting Started
 
+### Unsupported
+
+- `Bullet Threading` plugin
+> Cannot be used at the same time
+
 ### Install from Logseq Marketplace (Coming👷🚧)
 
 - Press [`---`] on the top right toolbar to open [`Plugins`]
