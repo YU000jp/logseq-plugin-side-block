@@ -1,15 +1,12 @@
 import '@logseq/libs'; //https://plugins-doc.logseq.com/
 import { settingsTemplate } from './settings';
-import { setup as l10nSetup, t } from "logseq-l10n"; //https://github.com/sethyuan/logseq-l10n
-import ja from "./translations/ja.json";
 import CSS from "./style.css?inline";
 import { LSPluginBaseInfo } from '@logseq/libs/dist/LSPlugin.user';
 import { removeProvideStyle } from './lib';
 
 
 /* main */
-const main = async () => {
-  await l10nSetup({ builtinTranslations: { ja } });
+const main = () => {
 
   /* user settings */
   logseq.useSettingsSchema(settingsTemplate());
@@ -28,7 +25,7 @@ const main = async () => {
   //ツールバーに設定画面を開くボタンを追加
   logseq.App.registerUIItem('toolbar', {
     key: 'sideBlockSettingsButton',
-    template: `<div><a class="button icon" data-on-click="sideBlockSettingsButton" style="font-size: 14px">🧱</a></div>`,
+    template: `<div><a class="button icon" data-on-click="sideBlockSettingsButton" style="font-size: 14px">🥦</a></div>`,
   });
   //ツールバーボタンのクリックイベント
   logseq.provideModel({
