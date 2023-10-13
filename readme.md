@@ -39,6 +39,10 @@
 
 ## Prior art & Credit
 
+### CSS code
+
+- [alexl](https://codeberg.org/alexl/for-logseq)
+
 ### Icon
 
 - [icooon-mono.com](https://icooon-mono.com/)
