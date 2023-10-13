@@ -32,7 +32,7 @@
 
 ### Install as custom CSS
 
-- [CSS code here](https://github.com/YU000jp/logseq-plugin-side-block/blob/main/src/style.css)
+- [CSS code here](https://github.com/YU000jp/logseq-plugin-side-block/blob/main/src/style.css) (based [alexl's code](https://codeberg.org/alexl/for-logseq))
 
 ### Install from Logseq Marketplace (Coming👷🚧)
 
