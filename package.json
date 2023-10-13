@@ -1,6 +1,6 @@
 {
     "name": "logseq-plugin-side-block",
-    "description": "A template for Logseq plugin written in TypeScript",
+    "description": "Place child blocks next to the parent block.",
     "repository": "https://github.com/YU000jp/logseq-plugin-side-block.git",
     "author": "YU000jp",
     "license": "MIT",
