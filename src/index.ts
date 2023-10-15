@@ -50,13 +50,13 @@ const main = () => {
       //ページコンテンツ
       const printMain = `
       <table>
-      <tr><th></th><th>${t("Tag name")}</th><th>${t("Width")}</th></tr>
-      <tr><td>1.</td><td><button class="button" id="sideBlockPopup--00" title="${t("Click here to insert a tag at the end of the current block.")}">#.side</button></td><td>unset</td></tr>
-      <tr><td>2.</td><td><button class="button" id="sideBlockPopup--01" title="${t("Click here to insert a tag at the end of the current block.")}">#.side-s</button></td><td>100px</td></tr>
-      <tr><td>3.</td><td><button class="button" id="sideBlockPopup--02" title="${t("Click here to insert a tag at the end of the current block.")}">#.side-m</button></td><td>200px</td></tr>
-      <tr><td>4.</td><td><button class="button" id="sideBlockPopup--03" title="${t("Click here to insert a tag at the end of the current block.")}">#.side-l</button></td><td>300px</td></tr>
-      <tr><td>5.</td><td><button class="button" id="sideBlockPopup--04" title="${t("Click here to insert a tag at the end of the current block.")}">#.side-ll</button></td><td>400px</td></tr>
-      <tr><td>6.</td><td><button class="button" id="sideBlockPopup--05" title="${t("Click here to insert a tag at the end of the current block.")}">#.side-lll</button></td><td>500px</td></tr>
+      <tr><th>${t("Size")}</th><th>${t("Tag name")}</th><th>${t("Width")}</th></tr>
+      <tr><td>Free</td><td><button class="button" id="sideBlockPopup--00" title="${t("Click here to insert a tag at the end of the current block.")}">#.side</button></td><td>unset</td></tr>
+      <tr><td>S</td><td><button class="button" id="sideBlockPopup--01" title="${t("Click here to insert a tag at the end of the current block.")}">#.side-s</button></td><td>100px</td></tr>
+      <tr><td>M</td><td><button class="button" id="sideBlockPopup--02" title="${t("Click here to insert a tag at the end of the current block.")}">#.side-m</button></td><td>200px</td></tr>
+      <tr><td>L</td><td><button class="button" id="sideBlockPopup--03" title="${t("Click here to insert a tag at the end of the current block.")}">#.side-l</button></td><td>300px</td></tr>
+      <tr><td>LL</td><td><button class="button" id="sideBlockPopup--04" title="${t("Click here to insert a tag at the end of the current block.")}">#.side-ll</button></td><td>400px</td></tr>
+      <tr><td>LLL</td><td><button class="button" id="sideBlockPopup--05" title="${t("Click here to insert a tag at the end of the current block.")}">#.side-lll</button></td><td>500px</td></tr>
       </table>
       <hr/>
       <p><small>${t("Tags containing \".side\" are displayed only when editing.")}</small></p>
@@ -122,7 +122,9 @@ const eventReplaceAndInsert = async (tag: string) => {
     //現在のブロックの最後にタグを追加
     //tagに空白が含まれていたら、[[ ]]で囲む
     if (tag.includes(" ")) tag = "[[" + tag + "]]";
-    let content = currentBlock.content.replaceAll(new RegExp(" #.side(-s|-m|-l|-ll|-lll)?", "g"), "");
+    // #.side-s、#.side-m、#.side-lll、#.side-ll、#.side-lを削除する。ただし、#.sideは最後に削除する
+    let content = currentBlock.content.replaceAll(/ #\.side-s| #\.side-m| #\.side-lll| #\.side-ll| #\.side-l| #.side/g, "");
+
     //contentの中に、\nが含まれている場合、一つ目の\nの前に、tagを挿入する
     if (content.includes("\n")) content = content.replace("\n", " #" + tag + "\n");
     else content = content + " #" + tag;

@@ -3,6 +3,7 @@
     "unset": "設定しない",
     "Width": "幅",
     "Tag name": "タグ名",
+    "Size": "サイズ",
     "Tags containing \".side\" are displayed only when editing.": "\".side\"を含むタグは編集時のみ表示",
     "Select a parent block first, then click the tag name to insert that tag.": "先にターゲットの親ブロックを選択してから、タグ名をクリックしてください。そのタグが挿入されます。",
     "Insert at editing block: #": "編集中のブロックに挿入: #",
