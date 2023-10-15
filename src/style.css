@@ -18,23 +18,23 @@ body>div#root>div>main>div#app-container {
             }
         }
 
-        &[data-refs-self*=".side-s"]>div>div>div>div>div.block-content {
+        &[data-refs-self*='".side-s"']>div>div>div>div>div.block-content {
             width: 100px !important;
         }
 
-        &[data-refs-self*=".side-m"]>div>div>div>div>div.block-content {
+        &[data-refs-self*='".side-m"']>div>div>div>div>div.block-content {
             width: 200px !important;
         }
 
-        &[data-refs-self*=".side-l"]>div>div>div>div>div.block-content {
+        &[data-refs-self*='".side-l"']>div>div>div>div>div.block-content {
             width: 300px !important;
         }
 
-        &[data-refs-self*=".side-ll"]>div>div>div>div>div.block-content {
+        &[data-refs-self*='".side-ll"']>div>div>div>div>div.block-content {
             width: 400px !important;
         }
 
-        &[data-refs-self*=".side-lll"]>div>div>div>div>div.block-content {
+        &[data-refs-self*='".side-lll"']>div>div>div>div>div.block-content {
             width: 500px !important;
         }
     }
