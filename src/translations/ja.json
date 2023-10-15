@@ -1,10 +1,12 @@
 {
     "On/Off": "オン/オフ",
-    "How to use": "使い方",
-    "Add a specific tag to the parent block.": "親ブロックに特定のタグを追加します。",
-    "From the second time onwards, Type a space and \"/.\", suggestions will be displayed.": "2回目以降は、半角スペースと\"/\"を入力すると、候補が表示されます。",
-    "--Tag name--": "--タグ名--",
     "unset": "設定しない",
-    "width": "幅",
-    "Tags containing \".side\" are displayed only when editing.": "`.side`を含むタグは、編集時のみ表示されます。"
+    "Width": "幅",
+    "Tag name": "タグ名",
+    "Tags containing \".side\" are displayed only when editing.": "\".side\"を含むタグは編集時のみ表示",
+    "Select a parent block first, then click the tag name to insert that tag.": "先にターゲットの親ブロックを選択してから、タグ名をクリックしてください。そのタグが挿入されます。",
+    "Insert at editing block: #": "編集中のブロックに挿入: #",
+    "No block selected.": "ブロックが選択されていません。",
+    "Click here to insert a tag at the end of the current block.": "ここをクリックすると、現在のブロックの末尾にタグが挿入されます。",
+    "The current block is empty.": "現在のブロックは空です。空のブロックには配置用のタグは挿入できません。"
 }
