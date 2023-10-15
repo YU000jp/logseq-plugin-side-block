@@ -1,8 +1,4 @@
-div#root>div>main>div#app-container {
-
-    & div.block-content :is(h1, h2, h3, h4, h5, h6) {
-        padding: .1em
-    }
+body>div#root>div>main>div#app-container {
 
     & div.ls-block {
         &[data-refs-self*=".side"] {
