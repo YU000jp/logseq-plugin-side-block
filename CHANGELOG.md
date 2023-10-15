@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/YU000jp/logseq-plugin-side-block/compare/v1.1.0...v1.1.1) (2023-10-15)
+
+
+### Bug Fixes
+
+* **bug:** update tag (remove tag from the target block) ([4f188d5](https://github.com/YU000jp/logseq-plugin-side-block/commit/4f188d51631f80297aa9e676ddcefd30ba9f0b57))
+
 # [1.1.0](https://github.com/YU000jp/logseq-plugin-side-block/compare/v1.0.0...v1.1.0) (2023-10-15)
 
 
