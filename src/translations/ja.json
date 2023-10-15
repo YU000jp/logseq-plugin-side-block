@@ -1,0 +1,10 @@
+{
+    "On/Off": "オン/オフ",
+    "How to use": "使い方",
+    "Add a specific tag to the parent block.": "親ブロックに特定のタグを追加します。",
+    "From the second time onwards, Type a space and \"/.\", suggestions will be displayed.": "2回目以降は、半角スペースと\"/\"を入力すると、候補が表示されます。",
+    "--Tag name--": "--タグ名--",
+    "unset": "設定しない",
+    "width": "幅",
+    "Tags containing \".side\" are displayed only when editing.": "`.side`を含むタグは、編集時のみ表示されます。"
+}

@@ -1,4 +1,5 @@
 import { SettingSchemaDesc } from '@logseq/libs/dist/LSPlugin.user';
+import { t } from 'logseq-l10n';
 
 /* user setting */
 // https://logseq.github.io/plugins/types/SettingSchemaDesc.html
@@ -6,7 +7,7 @@ export const settingsTemplate = (): SettingSchemaDesc[] => [
     {
         key: "booleanFunction",
         type: "boolean",
-        title: "On/Off",
+        title: t("On/Off"),
         default: true,
         description: "",
     },
@@ -14,20 +15,21 @@ export const settingsTemplate = (): SettingSchemaDesc[] => [
         key: "heading001",
         type: "heading",
         default: "",
-        title: "How to use",
+        title: t("How to use"),
         description: `
 
-        Add a specific tag to the parent block.
-        From the second time onwards, Type a space and "/.", suggestions will be displayed.
+        ${t("Add a specific tag to the parent block.")}
+        ${t("From the second time onwards, Type a space and \"/.\", suggestions will be displayed.")}
 
-        #.side : width unset
-        #.side-s : width 100px
-        #.side-m : width 200px
-        #.side-l : width 300px
-        #.side-ll : width 400px
-        #.side-lll : width 500px
+        ${t("--Tag name--")}
+        #.side : ${t("width")} ${t("unset")}
+        #.side-s : ${t("width")} 100px
+        #.side-m : ${t("width")} 200px
+        #.side-l : ${t("width")} 300px
+        #.side-ll : ${t("width")} 400px
+        #.side-lll : ${t("width")} 500px
         
-        Tags containing ".side" are displayed only when editing.
+        ${t("Tags containing \".side\" are displayed only when editing.")}
         
         `,
     },
