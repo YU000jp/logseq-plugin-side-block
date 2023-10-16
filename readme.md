@@ -4,10 +4,6 @@
 
 > Normally, it can be applied as custom CSS, but we have made it a plugin to make it easier to use.
 
-- Not published yet 👷🚧
-
-> [Release](https://github.com/YU000jp/logseq-plugin-side-block/releases) information is on the right. Load files at developer mode.
-
 [![latest release version](https://img.shields.io/github/v/release/YU000jp/logseq-plugin-side-block)](https://github.com/YU000jp/logseq-plugin-side-block/releases)
 [![License](https://img.shields.io/github/license/YU000jp/logseq-plugin-side-block?color=blue)](https://github.com/YU000jp/logseq-plugin-side-block/LICENSE)
 [![Downloads](https://img.shields.io/github/downloads/YU000jp/logseq-plugin-side-block/total.svg)](https://github.com/YU000jp/logseq-plugin-side-block/releases)
@@ -34,11 +30,9 @@
 
 - [CSS code here](https://github.com/YU000jp/logseq-plugin-side-block/blob/main/src/style.css) (based [alexl's code](https://codeberg.org/alexl/for-logseq))
 
-### Install from Logseq Marketplace (Coming👷🚧)
+### Install from Logseq Marketplace
 
-- Press [`---`] on the top right toolbar to open [`Plugins`]
-- Select marketplace
-- Type `Side` in the search field, select it from the search results and install
+- Press [`---`] on the top right toolbar to open [`Plugins`]. Select `marketplace`. Type `Side` in the search field, select it from the search results and install
 
 ### Usage
 
