@@ -109,7 +109,6 @@ const eventReplaceAndInsert = async (tag: string) => {
       logseq.UI.showMsg(t("The current block is empty."), "warning");
       return;
     }
-    console.log(currentBlock.content);
     //子ブロックを持たない場合は、子ブロックを追加
     if (currentBlock.children!.length === 0) await logseq.Editor.insertBlock(currentBlock.uuid, "");
 
@@ -128,7 +127,7 @@ const eventReplaceAndInsert = async (tag: string) => {
     //contentの中に、\nが含まれている場合、一つ目の\nの前に、tagを挿入する
     if (content.includes("\n")) content = content.replace("\n", " #" + tag + "\n");
     else content = content + " #" + tag;
-    //ほかおタグが使われている場合は削除する
+    //ほかのタグが使われている場合は削除する
     await logseq.Editor.updateBlock(currentBlock.uuid, content, currentBlock.properties);
     logseq.UI.showMsg(t("Insert at editing block: #") + tag + ".", "info");
     logseq.Editor.editBlock(currentBlock.uuid);
