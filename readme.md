@@ -7,7 +7,7 @@
 [![latest release version](https://img.shields.io/github/v/release/YU000jp/logseq-plugin-side-block)](https://github.com/YU000jp/logseq-plugin-side-block/releases)
 [![License](https://img.shields.io/github/license/YU000jp/logseq-plugin-side-block?color=blue)](https://github.com/YU000jp/logseq-plugin-side-block/LICENSE)
 [![Downloads](https://img.shields.io/github/downloads/YU000jp/logseq-plugin-side-block/total.svg)](https://github.com/YU000jp/logseq-plugin-side-block/releases)
-<!-- Published 2023 -->
+ Published 2023/10/15
 
 ---
 
@@ -32,7 +32,7 @@
 
 ### Install from Logseq Marketplace
 
-- Press [`---`] on the top right toolbar to open [`Plugins`]. Select `marketplace`. Type `Side` in the search field, select it from the search results and install
+- Press [`---`] on the top right toolbar to open [`Plugins`]. Select `marketplace`. Type `Side` in the search field, select it from the search results and install.
 
 ### Usage
 
