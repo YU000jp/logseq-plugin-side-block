@@ -26,10 +26,6 @@
 
 - `Bullet Threading` plugin cannot be used at the same time
 
-### Install as custom CSS
-
-- [CSS code here](https://github.com/YU000jp/logseq-plugin-side-block/blob/main/src/style.css) (based [alexl's code](https://codeberg.org/alexl/for-logseq))
-
 ### Install from Logseq Marketplace
 
 - Press [`---`] on the top right toolbar to open [`Plugins`]. Select `marketplace`. Type `Side` in the search field, select it from the search results and install.
@@ -59,6 +55,10 @@ Tags containing `.side` are displayed only when editing.
 ### Showcase
 
 - Use it by embedding it in a template.
+
+#### Install as custom CSS without this plugin
+
+- [CSS code here](https://github.com/YU000jp/logseq-plugin-side-block/blob/main/src/style.css) (based [alexl's code](https://codeberg.org/alexl/for-logseq))
 
 ---
 
