@@ -9,9 +9,7 @@
 [![Downloads](https://img.shields.io/github/downloads/YU000jp/logseq-plugin-side-block/total.svg)](https://github.com/YU000jp/logseq-plugin-side-block/releases)
  Published 2023/10/15
 
----
-
-## Feature
+## Overview
 
 - If attach a specific tag to a parent block, child blocks will be placed next to it.
 > The tags are hidden except when editing.
@@ -22,39 +20,35 @@
 
 ## Getting Started
 
-### Not supported
+Not supported > `Bullet Threading` plugin cannot be used at the same time
 
-- `Bullet Threading` plugin cannot be used at the same time
-
-### Install from Logseq Marketplace
-
-- Press [`---`] on the top right toolbar to open [`Plugins`]. Select `marketplace`. Type `Side` in the search field, select it from the search results and install.
+Install from Logseq Marketplace
+  - Press [`---`] on the top right toolbar to open [`Plugins`]. Select `marketplace`. Type `Side` in the search field, select it from the search results and install.
 
 ### Usage
 
-> either way
+- Tag the parent block.
+  > Tags containing `.side` are displayed only when editing.
 
-#### From toolbar
+Either of the following methods:
 
-- Operate from the toolbar button. When the button click, a popup show.
-  > First, the button is hidden by Logseq. Click this button (![icon](https://github.com/YU000jp/logseq-plugin-bullet-point-custom-icon/assets/111847207/136f9d0f-9dcf-4942-9821-c9f692fcfc2f)) on the toolbar. And select this (![image](https://github.com/YU000jp/logseq-plugin-side-block/assets/111847207/726d00da-f665-4eb1-ac15-77e10a24dcae)). After that, the #️⃣ button will appear on the toolbar.
-- Insert tags directly into the block from the popup.
+1. From toolbar
+   - Operate from the toolbar button. When the button click, a popup show.
+     > First, the button is hidden by Logseq. Click this button (![icon](https://github.com/YU000jp/logseq-plugin-bullet-point-custom-icon/assets/111847207/136f9d0f-9dcf-4942-9821-c9f692fcfc2f)) on the toolbar. And select this (![image](https://github.com/YU000jp/logseq-plugin-side-block/assets/111847207/726d00da-f665-4eb1-ac15-77e10a24dcae)). After that, the #️⃣ button will appear on the toolbar.
+   - Insert tags directly into the block from the popup.
+1. Tag directly
+   - Add a specific tag to the parent block.
+     - `#.side`: width unset
+     - `#.side-s`: width 100px
+     - `#.side-m`: width 200px
+     - `#.side-l`: width 300px
+     - `#.side-ll`: width 400px
+     - `#.side-lll`: width 500px
+  > From the second time onwards, Type a space and `/.`, suggestions will be displayed.
 
-#### Input a tag
 
-- Add a specific tag to the parent block.
-  - `#.side`: width unset
-  - `#.side-s`: width 100px
-  - `#.side-m`: width 200px
-  - `#.side-l`: width 300px
-  - `#.side-ll`: width 400px
-  - `#.side-lll`: width 500px
-- From the second time onwards, Type a space and `/.`, suggestions will be displayed.
-Tags containing `.side` are displayed only when editing.
 
-### Showcase
-
-- Use it by embedding it in a template.
+Showcase > Use it by embedding it in a template.
 
 #### Install as custom CSS without this plugin
 
@@ -66,19 +60,13 @@ Tags containing `.side` are displayed only when editing.
 
 > Go to the [discussion](https://github.com/YU000jp/logseq-plugin-side-block/discussions) tab to ask and find this kind of things.
 
-## Author
-
-- GitHub: [YU000jp](https://github.com/YU000jp)
-
 ## Prior art & Credit
 
-### CSS code
+CSS code > [alexl](https://codeberg.org/alexl/for-logseq)
 
-- [alexl](https://codeberg.org/alexl/for-logseq)
+Icon > [icooon-mono.com](https://icooon-mono.com/00372-%e3%83%96%e3%83%ad%e3%83%83%e3%82%b3%e3%83%aa%e3%83%bc/)
 
-### Icon
-
-- [icooon-mono.com](https://icooon-mono.com/00372-%e3%83%96%e3%83%ad%e3%83%83%e3%82%b3%e3%83%aa%e3%83%bc/)
+Author > [YU000jp (GitHub)](https://github.com/YU000jp)
 
 ---
 
