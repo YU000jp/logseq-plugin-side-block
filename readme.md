@@ -1,6 +1,8 @@
 # Logseq Plugin: Side Block
 
-- Place child blocks next to the parent block.
+[English](https://github.com/YU000jp/logseq-plugin-side-block) / [日本語](https://github.com/YU000jp/logseq-plugin-side-block/blob/main/readme.md)
+
+- Places bullet blocks on the left and right. If tag parent blocks, its descendant blocks are placed next to it.
 
 > Normally, it can be applied as custom CSS, but we have made it a plugin to make it easier to use.
 
