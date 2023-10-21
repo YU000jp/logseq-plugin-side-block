@@ -1,6 +1,6 @@
 # Logseq Plugin: Side Block
 
-[English](https://github.com/YU000jp/logseq-plugin-side-block) / [日本語](https://github.com/YU000jp/logseq-plugin-side-block/blob/main/readme.md)
+[English](https://github.com/YU000jp/logseq-plugin-side-block) / [日本語](https://github.com/YU000jp/logseq-plugin-side-block/blob/main/readme.ja.md)
 
 - Places bullet blocks on the left and right. If tag parent blocks, its descendant blocks are placed next to it.
 

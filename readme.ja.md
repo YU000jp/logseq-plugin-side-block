@@ -1,6 +1,6 @@
 # Logseq プラグイン: Side Block
 
-[English](https://github.com/YU000jp/logseq-plugin-side-block) / [日本語](https://github.com/YU000jp/logseq-plugin-side-block/blob/main/readme.md)
+[English](https://github.com/YU000jp/logseq-plugin-side-block) / [日本語](https://github.com/YU000jp/logseq-plugin-side-block/blob/main/readme.ja.md)
 
 - 左右に箇条書きブロックを配置するプラグインです。親ブロックにタグをつけるとその隣に、その子孫ブロックを配置します。
    > 通常、これはカスタムCSSとして適用できますが、使いやすくするためにプラグインとして提供しています。
