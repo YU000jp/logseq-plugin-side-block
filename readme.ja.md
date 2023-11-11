@@ -59,14 +59,14 @@ Logseq マーケットプレイスからインストール
 
 > [ディスカッション](https://github.com/YU000jp/logseq-plugin-side-block/discussions)タブにアクセスして、この種の質問をするか見つけます。
 
+1. このプラグインは、Logseq の DOM 構造に依存しています。Logseq のバージョン更新により DOM 構造が変更された場合、スタイルが適用されない場合があります。CSSを調整して対応します。何か気づいたら、issueを提起してください。
+
 ## 先行技術とクレジット
 
-CSSコード > [alexl](https://codeberg.org/alexl/for-logseq)
+CSSコード > [@alexl](https://codeberg.org/alexl/for-logseq)
 
 アイコン > [icooon-mono.com](https://icooon-mono.com/00372-%e3%83%96%e3%83%ad%e3%83%83%e3%82%b3%e3%83%aa%e3%83%bc/)
 
-製作者 > [YU000jp（GitHub）](https://github.com/YU000jp)
-
----
+製作者 > [@YU000jp](https://github.com/YU000jp)
 
 <a href="https://www.buymeacoffee.com/yu000japan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="🍌buy me a coffee 製作者にコーヒーを奢ってください!" style="height: 42px;width: 152px" ></a>
