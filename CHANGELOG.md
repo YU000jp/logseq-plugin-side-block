@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/YU000jp/logseq-plugin-side-block/compare/v1.1.1...v1.2.0) (2023-11-11)
+
+
+### Features
+
+* Disable styles in "Linked References" ([4474e87](https://github.com/YU000jp/logseq-plugin-side-block/commit/4474e87b99465669ae2c83c865f1b9d79710a2a1))
+
 ## [1.1.1](https://github.com/YU000jp/logseq-plugin-side-block/compare/v1.1.0...v1.1.1) (2023-10-15)
 
 
