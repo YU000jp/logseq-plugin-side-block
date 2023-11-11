@@ -48,8 +48,6 @@ Either of the following methods:
      - `#.side-lll`: width 500px
   > From the second time onwards, Type a space and `/.`, suggestions will be displayed.
 
-
-
 Showcase > Use it by embedding it in a template.
 
 #### Install as custom CSS without this plugin
@@ -61,6 +59,8 @@ Showcase > Use it by embedding it in a template.
 ## Showcase / Questions / Ideas / Help
 
 > Go to the [discussion](https://github.com/YU000jp/logseq-plugin-side-block/discussions) tab to ask and find this kind of things.
+
+- This plugin relies on Logseq's DOM structure. If the DOM structure changes due to a Logseq version update, styles may not be applied. We will adjust the CSS to deal with it. If you notice something, please raise an issue.
 
 ## Prior art & Credit
 
