@@ -64,12 +64,10 @@ Showcase > Use it by embedding it in a template.
 
 ## Prior art & Credit
 
-CSS code > [alexl](https://codeberg.org/alexl/for-logseq)
+CSS code > [@alexl](https://codeberg.org/alexl/for-logseq)
 
 Icon > [icooon-mono.com](https://icooon-mono.com/00372-%e3%83%96%e3%83%ad%e3%83%83%e3%82%b3%e3%83%aa%e3%83%bc/)
 
-Author > [YU000jp (GitHub)](https://github.com/YU000jp)
-
----
+Author > [@YU000jp](https://github.com/YU000jp)
 
 <a href="https://www.buymeacoffee.com/yu000japan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="🍌Buy Me A Coffee" style="height: 42px;width: 152px" ></a>
