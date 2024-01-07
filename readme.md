@@ -60,7 +60,7 @@ Showcase > Use it by embedding it in a template.
 
 > Go to the [discussion](https://github.com/YU000jp/logseq-plugin-side-block/discussions) tab to ask and find this kind of things.
 
-1. This plugin relies on Logseq's DOM structure. If the DOM structure changes due to a Logseq version update, styles may not be applied. We will adjust the CSS to deal with it. If you notice something, please raise an issue.
+1. This plugin relies on Logseq's DOM (Document Object Model) structure. If the DOM structure changes due to a Logseq version update, styles may not be applied. We will adjust the CSS to deal with it. If you notice something, please raise an issue.
 1. Similar functionality is implemented in another plugin too.
    - [Missing Commands & Views plugin](https://github.com/stdword/logseq13-missing-commands?tab=readme-ov-file#7-views) Tablerview
      > If you wish to migrate, please change the page names of the tags used in this plugin.
