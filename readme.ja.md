@@ -1,4 +1,4 @@
-# Logseq プラグイン: Side Block
+# Logseq プラグイン: Side Block 🥦
 
 [English](https://github.com/YU000jp/logseq-plugin-side-block) / [日本語](https://github.com/YU000jp/logseq-plugin-side-block/blob/main/readme.ja.md)
 

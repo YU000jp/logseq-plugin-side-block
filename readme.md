@@ -1,4 +1,4 @@
-# Logseq Plugin: Side Block
+# Logseq Plugin: Side Block 🥦
 
 [English](https://github.com/YU000jp/logseq-plugin-side-block) / [日本語](https://github.com/YU000jp/logseq-plugin-side-block/blob/main/readme.ja.md)
 
@@ -64,6 +64,7 @@ Showcase > Use it by embedding it in a template.
 1. Similar functionality is implemented in another plugin too.
    - [Missing Commands & Views plugin](https://github.com/stdword/logseq13-missing-commands?tab=readme-ov-file#7-views) Tablerview
      > If you wish to migrate, please change the page names of the tags used in this plugin.
+
 ## Prior art & Credit
 
 CSS code > [@alexl](https://codeberg.org/alexl/for-logseq)
