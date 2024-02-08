@@ -46,7 +46,7 @@ Either of the following methods:
      - `#.side-l`: width 300px
      - `#.side-ll`: width 400px
      - `#.side-lll`: width 500px
-  > From the second time onwards, Type a space and `/.`, suggestions will be displayed.
+  > From the second time onwards, Type a space and `#.`, suggestions will be displayed.
 
 Showcase > Use it by embedding it in a template.
 
