@@ -21,7 +21,7 @@
 
 ## 始めに
 
-非サポート > 同時に「Bullet Threading」プラグインは使用できません
+> 同時に「Bullet Threading」プラグインは使用できません
 
 Logseq マーケットプレイスからインストール
   - 右上のツールバーで[`---`]をクリックして[`プラグイン`]を開きます。`マーケットプレイス`を選択し、検索フィールドに`Side`と入力し、検索結果から選択してインストールします。
@@ -47,18 +47,15 @@ Logseq マーケットプレイスからインストール
      - `#.side-lll`: 幅 500px
   > 2回目以降からは、スペースと`#.`を入力すると候補が表示されます。
 
-ショーケース > テンプレートに埋め込んでタグを使用する
-
-#### このプラグインなしで、カスタムCSSとしてインストール
-
-- [CSSコードはこちら](https://github.com/YU000jp/logseq-plugin-side-block/blob/main/src/style.css)（[alexlのコード](https://codeberg.org/alexl/for-logseq)をベースにしています）
-
 ---
 
 ## ショーケース / 質問 / アイデア / ヘルプ
 
 > [ディスカッション](https://github.com/YU000jp/logseq-plugin-side-block/discussions)タブにアクセスして、この種の質問をするか見つけます。
 
+1. ショーケース > テンプレートに埋め込んでタグを使用する
+1. このプラグインなしで、カスタムCSSとしてインストール
+   - [CSSコードはこちら](https://github.com/YU000jp/logseq-plugin-side-block/blob/main/src/style.css)（[alexlのコード](https://codeberg.org/alexl/for-logseq)をベースにしています）
 1. このプラグインは、Logseq の DOM 構造に依存しています。Logseq のバージョン更新により DOM 構造が変更された場合、スタイルが適用されない場合があります。CSSを調整して対応します。何か気づいたら、issueを提起してください。
 
 ## 先行技術とクレジット
