@@ -3,6 +3,7 @@ import { settingsTemplate } from './settings';
 import { setup as l10nSetup, t } from "logseq-l10n"; //https://github.com/sethyuan/logseq-l10n
 import ja from "./translations/ja.json";
 import CSS from "./style.css?inline";
+import StickyNoteCSS from "./stickyNote.css?inline";
 import { BlockEntity, LSPluginBaseInfo } from '@logseq/libs/dist/LSPlugin.user';
 import { removeProvideStyle } from './lib';
 export const keyNameToolbarPopup = "toolbar-box";//ポップアップのキー名
@@ -24,6 +25,8 @@ const main = () => {
   /* side block */
   provideStyle();
 
+  if(logseq.settings!.booleanStickyNote === true) provideStyleStickyNote();
+
   //常時適用CSS
   logseq.provideStyle(`
   div#root>div>main>div#app-container a.tag[data-ref*=".side"] {display: none}
@@ -41,8 +44,13 @@ const main = () => {
   //ツールバーに設定画面を開くボタンを追加
   logseq.App.registerUIItem('toolbar', {
     key: 'sideBlockToolbar',
-    template: `<div><a class="button icon" data-on-click="sideBlockToolbar" style="font-size: 14px">🥦</a></div>`,
+    template: `<div><a class="button icon" data-on-click="sideBlockToolbar" style="font-size: 16px">🥦</a></div>`,
   });
+  logseq.App.registerUIItem('toolbar', {
+    key: 'sideBlockToolbarStickyNote',
+    template: `<div><a class="button icon" data-on-click="sideBlockToolbarStickyNote" style="font-size: 16px">⬜</a></div>`,
+  });
+
   //クリックイベント
   logseq.provideModel({
     //ツールバーのボタンをクリックしたら、ポップアップを表示
@@ -81,6 +89,13 @@ const main = () => {
     },
     //設定ボタンを押したら設定画面を開く
     showSettingsUI: () => logseq.showSettingsUI(),
+
+    //ツールバーのボタンをクリックしたら、StickyNoteのスタイルを適用するトグル(すでに適用されている場合は解除)
+    sideBlockToolbarStickyNote: () => {
+      if (logseq.settings!.booleanStickyNote === true) logseq.updateSettings({ booleanStickyNote: false });
+      else logseq.updateSettings({ booleanStickyNote: true });
+    },
+    
   });
 
   //Setting changed
@@ -88,6 +103,10 @@ const main = () => {
     if (newSet.booleanFunction !== oldSet.booleanFunction) {
       if (newSet.booleanFunction === true) provideStyle();
       else removeProvideStyle("side-block-style");
+    }
+    if (newSet.booleanStickyNote !== oldSet.booleanStickyNote) {
+      if (newSet.booleanStickyNote === true) provideStyleStickyNote();
+      else removeProvideStyle("side-block-sticky-note");
     }
   });
 
@@ -138,6 +157,8 @@ const eventReplaceAndInsert = async (tag: string) => {
 };
 
 const provideStyle = () => logseq.provideStyle({ key: 'side-block-style', style: CSS });
+
+const provideStyleStickyNote = () => logseq.provideStyle({key: 'side-block-sticky-note', style: StickyNoteCSS});
 
 
 const openPopupFromToolbar = (desc: string, printMain: string) => {

@@ -11,4 +11,11 @@ export const settingsTemplate = (): SettingSchemaDesc[] => [
         default: true,
         description: "",
     },
+    {
+        key: "booleanStickyNote",
+        type: "boolean",
+        title: "Sticky Note "+t("On/Off"),
+        default: true,
+        description: "(Developing)",
+    },
 ];
