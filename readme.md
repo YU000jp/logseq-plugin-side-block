@@ -52,7 +52,7 @@ Either of the following methods:
 
 ## Showcase / Questions / Ideas / Help
 
-> Go to the [discussion](https://github.com/YU000jp/logseq-plugin-side-block/discussions) tab to ask and find this kind of things.
+> Go to the [Discussions](https://github.com/YU000jp/logseq-plugin-side-block/discussions) tab to ask and find this kind of things.
 
 1. Showcase > Use it by embedding it in a template.
 1. Install as custom CSS without this plugin
