@@ -53,8 +53,8 @@ Logseq マーケットプレイスからインストール
 > [ディスカッション](https://github.com/YU000jp/logseq-plugin-side-block/discussions)タブにアクセスして、この種の質問をするか見つけます。
 
 1. ショーケース > テンプレートに埋め込んでタグを使用する
-1. このプラグインなしで、カスタムCSSとしてインストール
-   - [CSSコードはこちら](https://github.com/YU000jp/logseq-plugin-side-block/blob/main/src/style.css)（[alexlのコード](https://codeberg.org/alexl/for-logseq)をベースにしています）
+1. ※モバイル版などプラグインを使用しない場合、専用CSSは適用されません。手動でcustom.cssに追加してください。または、このプラグインなしでカスタムCSSとしてインストールする場合
+   >  > [CSS コード](https://github.com/YU000jp/logseq-plugin-side-block/blob/main/src/style.css)
 1. このプラグインは、Logseq の DOM 構造に依存しています。Logseq のバージョン更新により DOM 構造が変更された場合、スタイルが適用されない場合があります。CSSを調整して対応します。何か気づいたら、issueを提起してください。
 
 ## 先行技術とクレジット
