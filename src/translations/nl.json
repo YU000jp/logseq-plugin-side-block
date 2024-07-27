@@ -1,0 +1,14 @@
+{
+  "On/Off": "Aan/Uit",
+  "unset": "Unset",
+  "Width": "Breedte",
+  "Tag name": "Naam van de tag",
+  "Size": "Grootte",
+  "Tags containing \".side\" are displayed only when editing.": "Tags die \".side\" bevatten, worden alleen weergegeven tijdens het bewerken.",
+  "Select a parent block first, then click the tag name to insert that tag.": "Selecteer eerst een bovenliggend blok en klik vervolgens op de naam van de tag om die tag in te voegen.",
+  "Insert at editing block: #": "Invoegen bij bewerkingsblok: #",
+  "No block selected.": "Geen blok geselecteerd.",
+  "Click here to insert a tag at the end of the current block.": "Klik hier om een tag in te voegen aan het einde van het huidige blok.",
+  "The current block is empty.": "Het huidige blok is leeg.",
+  "plugin settings": "Plug-in-instellingen"
+}

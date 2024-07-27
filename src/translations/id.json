@@ -1,0 +1,14 @@
+{
+  "On/Off": "Hidup/Mati",
+  "unset": "tidak diatur",
+  "Width": "Lebar",
+  "Tag name": "Nama tag",
+  "Size": "Tingginya",
+  "Tags containing \".side\" are displayed only when editing.": "Tag yang berisi \".side\" hanya ditampilkan saat mengedit.",
+  "Select a parent block first, then click the tag name to insert that tag.": "Pilih blok induk terlebih dahulu, lalu klik nama tag untuk menyisipkan tag tersebut.",
+  "Insert at editing block: #": "Sisipkan di blok pengeditan: #",
+  "No block selected.": "Tidak ada blok yang dipilih.",
+  "Click here to insert a tag at the end of the current block.": "Klik di sini untuk menyisipkan tag di akhir blok saat ini.",
+  "The current block is empty.": "Blok saat ini kosong.",
+  "plugin settings": "Pengaturan plugin"
+}

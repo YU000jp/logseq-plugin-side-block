@@ -1,0 +1,14 @@
+{
+  "On/Off": "Marche/Arrêt",
+  "unset": "Unset",
+  "Width": "Largeur",
+  "Tag name": "Nom de la balise",
+  "Size": "Taille",
+  "Tags containing \".side\" are displayed only when editing.": "Les balises contenant « .side » ne sont affichées que lors de l’édition.",
+  "Select a parent block first, then click the tag name to insert that tag.": "Sélectionnez d’abord un bloc parent, puis cliquez sur le nom de la balise pour insérer cette balise.",
+  "Insert at editing block: #": "Insérer dans le bloc d’édition : #",
+  "No block selected.": "Aucun bloc sélectionné.",
+  "Click here to insert a tag at the end of the current block.": "Cliquez ici pour insérer une balise à la fin du bloc en cours.",
+  "The current block is empty.": "Le bloc actuel est vide.",
+  "plugin settings": "Paramètres du plugin"
+}

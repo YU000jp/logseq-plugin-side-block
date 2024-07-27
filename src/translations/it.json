@@ -1,0 +1,14 @@
+{
+  "On/Off": "Acceso spento",
+  "unset": "Annullata",
+  "Width": "Larghezza",
+  "Tag name": "Nome del tag",
+  "Size": "Grandezza",
+  "Tags containing \".side\" are displayed only when editing.": "I tag contenenti \".side\" vengono visualizzati solo durante la modifica.",
+  "Select a parent block first, then click the tag name to insert that tag.": "Seleziona prima un blocco padre, quindi fai clic sul nome del tag per inserire quel tag.",
+  "Insert at editing block: #": "Inserisci nel blocco di modifica: #",
+  "No block selected.": "Nessun blocco selezionato.",
+  "Click here to insert a tag at the end of the current block.": "Fare clic qui per inserire un tag alla fine del blocco corrente.",
+  "The current block is empty.": "Il blocco corrente è vuoto.",
+  "plugin settings": "Impostazioni del plug-in"
+}

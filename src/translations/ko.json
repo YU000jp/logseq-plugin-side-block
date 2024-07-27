@@ -1,0 +1,14 @@
+{
+  "On/Off": "온 / 오프",
+  "unset": "해제",
+  "Width": "너비",
+  "Tag name": "태그 이름",
+  "Size": "크기",
+  "Tags containing \".side\" are displayed only when editing.": "\".side\"가 포함된 태그는 편집할 때만 표시됩니다.",
+  "Select a parent block first, then click the tag name to insert that tag.": "먼저 상위 블록을 선택한 다음 태그 이름을 클릭하여 해당 태그를 삽입합니다.",
+  "Insert at editing block: #": "편집 블록에 삽입: #",
+  "No block selected.": "선택한 블록이 없습니다.",
+  "Click here to insert a tag at the end of the current block.": "현재 블록의 끝에 태그를 삽입하려면 여기를 클릭하십시오.",
+  "The current block is empty.": "현재 블록은 비어 있습니다.",
+  "plugin settings": "플러그인 설정"
+}

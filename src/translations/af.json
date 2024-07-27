@@ -1,0 +1,14 @@
+{
+  "On/Off": "Aan/af",
+  "unset": "Unset",
+  "Width": "Breedte",
+  "Tag name": "Merk naam",
+  "Size": "Grootte",
+  "Tags containing \".side\" are displayed only when editing.": "Etikette wat \".side\" bevat, word slegs vertoon tydens redigering.",
+  "Select a parent block first, then click the tag name to insert that tag.": "Kies eers 'n ouerblok en klik dan op die etiketnaam om die etiket in te voeg.",
+  "Insert at editing block: #": "Voeg by redigeringsblok in: #",
+  "No block selected.": "Geen blok gekies nie.",
+  "Click here to insert a tag at the end of the current block.": "Klik hier om 'n merker aan die einde van die huidige blok in te voeg.",
+  "The current block is empty.": "Die huidige blok is leeg.",
+  "plugin settings": "Inprop-instellings"
+}

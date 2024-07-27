@@ -1,0 +1,14 @@
+{
+  "On/Off": "Wł./Wył.",
+  "unset": "Unset",
+  "Width": "Szerokość",
+  "Tag name": "Nazwa tagu",
+  "Size": "Rozmiar",
+  "Tags containing \".side\" are displayed only when editing.": "Znaczniki zawierające ciąg \".side\" są wyświetlane tylko podczas edycji.",
+  "Select a parent block first, then click the tag name to insert that tag.": "Najpierw zaznacz blok nadrzędny, a następnie kliknij nazwę znacznika, aby wstawić ten znacznik.",
+  "Insert at editing block: #": "Wstaw w bloku edycyjnym: #",
+  "No block selected.": "Nie wybrano żadnego bloku.",
+  "Click here to insert a tag at the end of the current block.": "Kliknij tutaj, aby wstawić tag na końcu bieżącego bloku.",
+  "The current block is empty.": "Bieżący blok jest pusty.",
+  "plugin settings": "Ustawienia wtyczki"
+}

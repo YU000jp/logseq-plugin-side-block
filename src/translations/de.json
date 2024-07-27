@@ -1,0 +1,14 @@
+{
+  "On/Off": "Ein/Aus",
+  "unset": "Unset",
+  "Width": "Breite",
+  "Tag name": "Tag name",
+  "Size": "Größe",
+  "Tags containing \".side\" are displayed only when editing.": "Tags, die \".side\" enthalten, werden nur beim Bearbeiten angezeigt.",
+  "Select a parent block first, then click the tag name to insert that tag.": "Wählen Sie zuerst einen übergeordneten Block aus und klicken Sie dann auf den Tag-Namen, um diesen Tag einzufügen.",
+  "Insert at editing block: #": "Einfügen im Bearbeitungsblock: #",
+  "No block selected.": "Kein Block ausgewählt.",
+  "Click here to insert a tag at the end of the current block.": "Klicken Sie hier, um ein Tag am Ende des aktuellen Blocks einzufügen.",
+  "The current block is empty.": "Der aktuelle Block ist leer.",
+  "plugin settings": "Plugin-Einstellungen"
+}

@@ -1,0 +1,14 @@
+{
+  "On/Off": "开/关",
+  "unset": "未凝固的",
+  "Width": "宽度",
+  "Tag name": "标签名称",
+  "Size": "大小",
+  "Tags containing \".side\" are displayed only when editing.": "包含“.side”的标签仅在编辑时显示。",
+  "Select a parent block first, then click the tag name to insert that tag.": "首先选择一个父块，然后单击标签名称以插入该标签。",
+  "Insert at editing block: #": "在编辑块处插入：#",
+  "No block selected.": "未选择任何块。",
+  "Click here to insert a tag at the end of the current block.": "单击此处在当前块的末尾插入标签。",
+  "The current block is empty.": "当前块是空的。",
+  "plugin settings": "插件设置"
+}

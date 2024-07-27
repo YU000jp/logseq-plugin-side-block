@@ -1,0 +1,14 @@
+{
+  "On/Off": "Zapnuté/vypnuté",
+  "unset": "Nepoužitého",
+  "Width": "Šírka",
+  "Tag name": "Názov značky",
+  "Size": "Veľkosť",
+  "Tags containing \".side\" are displayed only when editing.": "Značky obsahujúce \".side\" sa zobrazujú iba pri úpravách.",
+  "Select a parent block first, then click the tag name to insert that tag.": "Najprv vyberte nadradený blok a potom kliknutím na názov tagu vložte danú značku.",
+  "Insert at editing block: #": "Vložiť do editačného bloku: #",
+  "No block selected.": "Nie je vybratý žiadny blok.",
+  "Click here to insert a tag at the end of the current block.": "Kliknutím sem vložíte značku na koniec aktuálneho bloku.",
+  "The current block is empty.": "Aktuálny blok je prázdny.",
+  "plugin settings": "Nastavenia pluginu"
+}

@@ -1,0 +1,14 @@
+{
+  "On/Off": "På av",
+  "unset": "Fjern",
+  "Width": "Bredde",
+  "Tag name": "Navn på tagg",
+  "Size": "Størrelse",
+  "Tags containing \".side\" are displayed only when editing.": "Tagger som inneholder \".side\" vises bare når du redigerer.",
+  "Select a parent block first, then click the tag name to insert that tag.": "Velg en overordnet blokk først, og klikk deretter på merkenavnet for å sette inn den koden.",
+  "Insert at editing block: #": "Sett inn ved redigeringsblokk: #",
+  "No block selected.": "Ingen blokk valgt.",
+  "Click here to insert a tag at the end of the current block.": "Klikk her for å sette inn en tag på slutten av den gjeldende blokken.",
+  "The current block is empty.": "Den nåværende blokken er tom.",
+  "plugin settings": "plugin-innstillinger"
+}

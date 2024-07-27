@@ -1,0 +1,14 @@
+{
+  "On/Off": "Вкл/Выкл",
+  "unset": "Не установлено",
+  "Width": "Ширина",
+  "Tag name": "Имя тега",
+  "Size": "Размер",
+  "Tags containing \".side\" are displayed only when editing.": "Теги, содержащие \".side\", отображаются только при редактировании.",
+  "Select a parent block first, then click the tag name to insert that tag.": "Сначала выберите родительский блок, а затем нажмите на имя тега, чтобы вставить его.",
+  "Insert at editing block: #": "Вставить в блок редактирования: #",
+  "No block selected.": "Блок не выбран.",
+  "Click here to insert a tag at the end of the current block.": "Нажмите здесь, чтобы вставить тег в конец текущего блока.",
+  "The current block is empty.": "Текущий блок пуст.",
+  "plugin settings": "Настройки плагина"
+}

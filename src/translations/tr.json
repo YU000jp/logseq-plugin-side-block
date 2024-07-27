@@ -1,0 +1,14 @@
+{
+  "On/Off": "Açık/Kapalı",
+  "unset": "Unset",
+  "Width": "Genişlik",
+  "Tag name": "Etiket adı",
+  "Size": "Boyut",
+  "Tags containing \".side\" are displayed only when editing.": "\".side\" içeren etiketler yalnızca düzenleme sırasında görüntülenir.",
+  "Select a parent block first, then click the tag name to insert that tag.": "Önce bir üst blok seçin, ardından bu etiketi eklemek için etiket adını tıklayın.",
+  "Insert at editing block: #": "Düzenleme bloğuna ekle: #",
+  "No block selected.": "Hiçbir blok seçilmedi.",
+  "Click here to insert a tag at the end of the current block.": "Geçerli bloğun sonuna bir etiket eklemek için buraya tıklayın.",
+  "The current block is empty.": "Mevcut blok boş.",
+  "plugin settings": "Eklenti ayarları"
+}
