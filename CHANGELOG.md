@@ -5,6 +5,13 @@
 
 * **Add:** translations ([cac138a](https://github.com/YU000jp/logseq-plugin-side-block/commit/cac138a3ef8e9f85c9ddb5347c23876ba94ee8c6))
 
+# [1.3.0](https://github.com/YU000jp/logseq-plugin-side-block/compare/v1.2.0...v1.3.0) (2024-07-27)
+
+
+### Features
+
+* **Add:** translations ([cac138a](https://github.com/YU000jp/logseq-plugin-side-block/commit/cac138a3ef8e9f85c9ddb5347c23876ba94ee8c6))
+
 # [1.2.0](https://github.com/YU000jp/logseq-plugin-side-block/compare/v1.1.1...v1.2.0) (2023-11-11)
 
 
