@@ -3,6 +3,9 @@
 - 左右に箇条書きブロックを配置するプラグインです。親ブロックにタグをつけるとその隣に、その子孫ブロックを配置します。
    > 通常、これはカスタムCSSとして適用できますが、使いやすくするためにプラグインとして提供しています。
 
+> [!WARNING]
+>このプラグインはLogseq dbバージョンでは動作しません。
+
 <div align="right">
  
 [English](https://github.com/YU000jp/logseq-plugin-side-block) / [日本語](https://github.com/YU000jp/logseq-plugin-side-block/blob/main/readme.ja.md) [![latest release version](https://img.shields.io/github/v/release/YU000jp/logseq-plugin-side-block)](https://github.com/YU000jp/logseq-plugin-side-block/releases) [![License](https://img.shields.io/github/license/YU000jp/logseq-plugin-side-block?color=blue)](https://github.com/YU000jp/logseq-plugin-side-block/LICENSE) [![Downloads](https://img.shields.io/github/downloads/YU000jp/logseq-plugin-side-block/total.svg)](https://github.com/YU000jp/logseq-plugin-side-block/releases)
