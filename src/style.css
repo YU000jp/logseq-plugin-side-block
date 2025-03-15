@@ -1,44 +1,81 @@
-body>div#root>div>main>div#app-container {
+#app-container {
     & a.tag[data-ref*=".side"] {
-        display: none
+        display: none;
     }
 
-    & div:is(#main-content-container, #right-sidebar) div:is(.journal.page, .page.relative>div.relative) div.ls-block {
-        &[data-refs-self*=".side"] {
+    & :is(#main-content-container, #right-sidebar) {
+
+        /* for db */
+        & div.page.relative div.blocks-list-wrap:has(div.ls-block a.tag[data-ref*=".side"])>div.ls-block:not(:has(div.ls-block a.tag[data-ref*=".side"])):has(a.tag[data-ref*=".side"]) {
             display: flex;
 
-            &>div.block-children-container {
-                flex-grow: 1;
+
+            & div.block-content-or-editor-wrap {
+
+                &:has(a.tag[data-ref='.side-s']) {
+                    width: 100px !important;
+                }
+
+                &:has(a.tag[data-ref='.side-m']) {
+                    width: 200px !important;
+                }
+
+                &:has(a.tag[data-ref='.side-l']) {
+                    width: 300px !important;
+                }
+
+                &:has(a.tag[data-ref='.side-ll']) {
+                    width: 400px !important;
+                }
+
+                &:has(a.tag[data-ref='.side-lll']) {
+                    width: 500px !important;
+                }
             }
 
-            &>div>div>div>div>div>div>div>div>a.tag {
-                float: left;
-            }
-
-            &+div.ls-block[data-refs-self*=".side"] {
-                margin-top: 15px;
-                margin-bottom: 15px;
+            & div.block-content {
+                min-width: 1em;
             }
         }
 
-        &[data-refs-self*='".side-s"']>div>div>div>div>div.block-content {
-            width: 100px !important;
-        }
+        /* for md */
+        & div:is(.journal.page, .page.relative>div.relative) div.ls-block {
+            &[data-refs-self*=".side"] {
+                display: flex;
 
-        &[data-refs-self*='".side-m"']>div>div>div>div>div.block-content {
-            width: 200px !important;
-        }
+                &>div.block-children-container {
+                    flex-grow: 1;
+                }
 
-        &[data-refs-self*='".side-l"']>div>div>div>div>div.block-content {
-            width: 300px !important;
-        }
+                &>div>div>div>div>div>div>div>div>a.tag {
+                    float: left;
+                }
 
-        &[data-refs-self*='".side-ll"']>div>div>div>div>div.block-content {
-            width: 400px !important;
-        }
+                &+div.ls-block[data-refs-self*=".side"] {
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+            }
 
-        &[data-refs-self*='".side-lll"']>div>div>div>div>div.block-content {
-            width: 500px !important;
+            &[data-refs-self*='".side-s"']>div>div>div>div>div.block-content {
+                width: 100px !important;
+            }
+
+            &[data-refs-self*='".side-m"']>div>div>div>div>div.block-content {
+                width: 200px !important;
+            }
+
+            &[data-refs-self*='".side-l"']>div>div>div>div>div.block-content {
+                width: 300px !important;
+            }
+
+            &[data-refs-self*='".side-ll"']>div>div>div>div>div.block-content {
+                width: 400px !important;
+            }
+
+            &[data-refs-self*='".side-lll"']>div>div>div>div>div.block-content {
+                width: 500px !important;
+            }
         }
     }
 }

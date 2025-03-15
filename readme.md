@@ -3,8 +3,8 @@
 - Places bullet blocks on the left and right. If tag parent blocks, its descendant blocks are placed next to it.
 > Normally, it can be applied as custom CSS, but we have made it a plugin to make it easier to use.
 
-> [!WARNING]
-This plugin does not work with Logseq db version.
+> [!NOTE]
+This plugin works in Logseq db version.
 
 <div align="right">
  
