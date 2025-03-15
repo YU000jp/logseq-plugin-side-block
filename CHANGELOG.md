@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/YU000jp/logseq-plugin-side-block/compare/v1.3.0...v1.4.0) (2025-03-15)
+
+
+### Features
+
+* Support for Logseq-db ([270bd53](https://github.com/YU000jp/logseq-plugin-side-block/commit/270bd53afd1129cd60f23dd419012fb6a88a9b86))
+
 # [1.3.0](https://github.com/YU000jp/logseq-plugin-side-block/compare/v1.2.0...v1.3.0) (2024-07-27)
 
 
