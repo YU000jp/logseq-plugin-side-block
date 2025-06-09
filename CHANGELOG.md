@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/YU000jp/logseq-plugin-side-block/compare/v1.4.0...v1.4.1) (2025-06-09)
+
+
+### Bug Fixes
+
+* **bug:** Update CSS for Logseq DB model ([5d36ae6](https://github.com/YU000jp/logseq-plugin-side-block/commit/5d36ae6f21ddb560e483b21813d1baae48b1fa21))
+
 # [1.4.0](https://github.com/YU000jp/logseq-plugin-side-block/compare/v1.3.0...v1.4.0) (2025-03-15)
 
 
