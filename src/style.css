@@ -6,9 +6,12 @@
     & :is(#main-content-container, #right-sidebar) {
 
         /* for db */
-        & div.page.relative div.blocks-list-wrap:has(div.ls-block a.tag[data-ref*=".side"])>div.ls-block:not(:has(div.ls-block a.tag[data-ref*=".side"])):has(a.tag[data-ref*=".side"]) {
+        & div.page div.blocks-list-wrap:has(div.ls-block a.tag[data-ref*=".side"])>div.ls-block:not(:has(div.ls-block a.tag[data-ref*=".side"])):has(a.tag[data-ref*=".side"]) {
             display: flex;
 
+            &>div.block-children-container {
+                width: -webkit-fill-available;
+            }
 
             & div.block-content-or-editor-wrap {
 
@@ -39,7 +42,7 @@
         }
 
         /* for md */
-        & div:is(.journal.page, .page.relative>div.relative) div.ls-block {
+        & div:is(.journal.page, .page>div.relative) div.ls-block {
             &[data-refs-self*=".side"] {
                 display: flex;
 
