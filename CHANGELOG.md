@@ -1,3 +1,5 @@
+## [1.4.2](https://github.com/YU000jp/logseq-plugin-side-block/compare/v1.4.1...v1.4.2) (2025-07-05)
+
 ## [1.4.1](https://github.com/YU000jp/logseq-plugin-side-block/compare/v1.4.0...v1.4.1) (2025-06-09)
 
 
