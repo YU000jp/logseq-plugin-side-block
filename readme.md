@@ -4,7 +4,7 @@
 > Normally, it can be applied as custom CSS, but we have made it a plugin to make it easier to use.
 
 > [!WARNING]
-> This plugin supports Logseq DB models. There is currently a bug in the Logseq Plugin API that prevents it from working properly. Styles apply.
+> This plugin supports Logseq DB models. There is currently a bug in the Logseq Plugin API that prevents it from working properly. Use direct tags, please. Styles apply.
 
 <div align="right">
  
