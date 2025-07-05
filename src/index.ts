@@ -1,28 +1,19 @@
 import '@logseq/libs' //https://plugins-doc.logseq.com/
 import { BlockEntity, LSPluginBaseInfo } from '@logseq/libs/dist/LSPlugin.user'
-import { setup as l10nSetup, t } from "logseq-l10n" //https://github.com/sethyuan/logseq-l10n
+import { t } from "logseq-l10n" //https://github.com/sethyuan/logseq-l10n
 import { removeProvideStyle } from './lib'
+import { logseqModelCheck } from './logseqModelCheck'
 import { settingsTemplate } from './settings'
 import CSS from "./style.css?inline"
-import af from "./translations/af.json"
-import de from "./translations/de.json"
-import es from "./translations/es.json"
-import fr from "./translations/fr.json"
-import id from "./translations/id.json"
-import it from "./translations/it.json"
-import ja from "./translations/ja.json"
-import ko from "./translations/ko.json"
-import nbNO from "./translations/nb-NO.json"
-import nl from "./translations/nl.json"
-import pl from "./translations/pl.json"
-import ptBR from "./translations/pt-BR.json"
-import ptPT from "./translations/pt-PT.json"
-import ru from "./translations/ru.json"
-import sk from "./translations/sk.json"
-import tr from "./translations/tr.json"
-import uk from "./translations/uk.json"
-import zhCN from "./translations/zh-CN.json"
-import zhHant from "./translations/zh-Hant.json"
+import { loadLogseqL10n } from './translations/l10nSetup'
+
+// 変数 (同じモジュール内で使用するため、exportしない)
+let logseqVersion: string = "" //バージョンチェック用
+let logseqMdModel: boolean = false //モデルチェック用
+// 外部から参照するためにexportする
+export const replaceLogseqVersion = (version: string) => logseqVersion = version
+export const replaceLogseqMdModel = (mdModel: boolean) => logseqMdModel = mdModel
+
 export const keyPopup = "toolbar-box"//ポップアップのキー名
 const keyStyle = "side-block-style"//CSSのキー名
 const keyToolbar = "sideBlockToolbar"//ツールバーのキー名
@@ -37,12 +28,11 @@ const keyShowSettingsUI = "showSettingsUI"//設定画面を開くボタンのキ
 /* main */
 const main = async () => {
 
-  //L10N
-  await l10nSetup({
-    builtinTranslations: {//Full translations
-      ja, af, de, es, fr, id, it, ko, "nb-NO": nbNO, nl, pl, "pt-BR": ptBR, "pt-PT": ptPT, ru, sk, tr, uk, "zh-CN": zhCN, "zh-Hant": zhHant
-    }
-  })
+  // Logseqモデルのチェックを実行
+  const [logseqMdModel] = await logseqModelCheck()
+
+  // ユーザー設定言語を取得し、L10Nをセットアップ
+  const { preferredLanguage, preferredDateFormat } = await loadLogseqL10n()
 
   /* user settings */
   logseq.useSettingsSchema(await settingsTemplate())
@@ -155,11 +145,18 @@ const showPopup = () => {
 
 const eventReplaceAndInsert = async (tag: string) => {
 
+  // if (logseqMdModel === false) {
+
+  // }
+
   //現在のブロックを取得
-  const currentBlock = await logseq.Editor.getCurrentBlock() as BlockEntity | null
+  const currentBlock = await logseq.Editor.getCurrentBlock() as BlockEntity | null // TODO: なぜか、DBモデルではnullが返ってくる
   if (currentBlock) {
+    let content: string = logseqMdModel === true ?
+      currentBlock.content as string //Md モデルの場合
+      : currentBlock.title as unknown as string // DB モデルの場合
     //current.contentが空の場合はキャンセル
-    if (currentBlock.content === "") {
+    if (content === "") {
       logseq.UI.showMsg(t("The current block is empty."), "warning")
       return
     }
@@ -179,15 +176,17 @@ const eventReplaceAndInsert = async (tag: string) => {
     //   tag = "[[" + tag + "]]"
 
     // #.side-s、#.side-m、#.side-lll、#.side-ll、#.side-lを削除する。ただし、#.sideは最後に削除する
-    let content = currentBlock.content.replaceAll(/ #\.side-s| #\.side-m| #\.side-lll| #\.side-ll| #\.side-l| #.side/g, "")
+    if (content) {
+      content = content.replace(/ #\.side-s| #\.side-m| #\.side-lll| #\.side-ll| #\.side-l| #.side/g, "")
+    }
 
     //contentの中に、\nが含まれている場合、一つ目の\nの前に、tagを挿入する
-    content = content.includes("\n") ?
-      content.replace("\n", " #" + tag + "\n")
+    content = content.includes("\n")
+      ? content.replace("\n", " #" + tag + "\n")
       : content + " #" + tag
 
     //ほかのタグが使われている場合は削除する
-    await logseq.Editor.updateBlock(currentBlock.uuid, content, currentBlock.properties)
+    await logseq.Editor.updateBlock(currentBlock.uuid, content as string, currentBlock.properties)
     logseq.UI.showMsg(t("Insert at editing block: #") + tag + ".", "info")
     logseq.Editor.editBlock(currentBlock.uuid)
 
