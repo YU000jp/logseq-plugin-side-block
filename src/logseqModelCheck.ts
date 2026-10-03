@@ -1,5 +1,8 @@
 import { replaceLogseqMdModel, replaceLogseqVersion } from "."
 
+// Guard so that only the latest detection may update the flag (graph changes are async)
+let latestCheckId = 0
+
 // Fetch the app version and store it (informational only; never used for graph-type detection).
 const fetchAppVersion = async (): Promise<void> => {
     const logseqInfo = (await logseq.App.getInfo("version")) as unknown
@@ -9,16 +12,15 @@ const fetchAppVersion = async (): Promise<void> => {
     replaceLogseqVersion(match ? match[0] : version)
 }
 
-// Check if the current graph is a DB graph. Returns true only for DB graphs.
-// The official API does not exist on 0.10.x hosts (logseq.App is a dynamic proxy, so a typeof
-// guard is useless): a rejected call or a non-boolean value means the host is a legacy app
-// that cannot open DB graphs.
-const checkLogseqDbGraph = async (): Promise<boolean> => {
+// Check if the current graph is a DB graph. Returns null when detection fails
+// (a rejected call or a non-boolean value, e.g. on 0.10.x hosts where the API does
+// not exist — logseq.App is a dynamic proxy, so a typeof guard is useless).
+const checkLogseqDbGraph = async (): Promise<boolean | null> => {
     try {
         const value = await logseq.App.checkCurrentIsDbGraph()
-        return typeof value === "boolean" ? value : false
+        return typeof value === "boolean" ? value : null
     } catch {
-        return false
+        return null
     }
 }
 
@@ -28,13 +30,20 @@ const checkLogseqDbGraph = async (): Promise<boolean> => {
  */
 export const logseqModelCheck = async (): Promise<boolean[]> => {
     await fetchAppVersion() // アプリバージョンを保存(情報用。グラフ種別には使わない)
-    const isDbGraph = await checkLogseqDbGraph() // 現在のグラフがDBグラフか
-    const isFileGraph = !isDbGraph // 現在のグラフがファイルベースか(= !isDbGraph)
-    replaceLogseqMdModel(isFileGraph)
+    const checkId = ++latestCheckId
+    const detected = await checkLogseqDbGraph() // 現在のグラフがDBグラフか
+    // 検出失敗 = API非搭載の旧アプリとみなしファイルグラフ扱い(DBグラフを開けないため)
+    const isDbGraph = detected ?? false
+    if (checkId === latestCheckId) // より新しい判定が開始されていなければフラグを更新
+        replaceLogseqMdModel(!isDbGraph)
 
     // Callback when the graph changes: re-detect and update the flag
     logseq.App.onCurrentGraphChanged(async () => {
-        replaceLogseqMdModel(!(await checkLogseqDbGraph()))
+        const id = ++latestCheckId
+        const isDb = await checkLogseqDbGraph()
+        // 判定不能なら既知のフラグを維持し、より新しい判定が開始されていたら破棄する
+        if (id !== latestCheckId || isDb === null) return
+        replaceLogseqMdModel(!isDb)
     })
-    return [isDbGraph, isFileGraph]
+    return [isDbGraph, !isDbGraph]
 }
