@@ -28,8 +28,8 @@ const keyShowSettingsUI = "showSettingsUI"//設定画面を開くボタンのキ
 /* main */
 const main = async () => {
 
-  // Logseqモデルのチェックを実行
-  const [logseqMdModel] = await logseqModelCheck()
+  // Logseqモデルのチェックを実行(グラフ種別を検出してフラグを更新)
+  await logseqModelCheck()
 
   // ユーザー設定言語を取得し、L10Nをセットアップ
   const { preferredLanguage, preferredDateFormat } = await loadLogseqL10n()
