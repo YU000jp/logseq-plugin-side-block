@@ -1,3 +1,11 @@
+## [1.4.4](https://github.com/YU000jp/logseq-plugin-side-block/compare/v1.4.3...v1.4.4) (2026-10-03)
+
+
+### Bug Fixes
+
+* グラフ切替時の検出レースと判定失敗時の扱いを修正 ([2183fe7](https://github.com/YU000jp/logseq-plugin-side-block/commit/2183fe72fd074a4140726952848aa686849b059b))
+* グラフ種別の検出を公式APIベースに修正(DB系アプリ+ファイルグラフの誤検出) ([5c763e3](https://github.com/YU000jp/logseq-plugin-side-block/commit/5c763e3ba470952d8a82f366e1ff7c311c6bd9cd))
+
 ## [1.4.3](https://github.com/YU000jp/logseq-plugin-side-block/compare/v1.4.2...v1.4.3) (2026-10-03)
 
 ## [1.4.2](https://github.com/YU000jp/logseq-plugin-side-block/compare/v1.4.1...v1.4.2) (2025-07-05)
